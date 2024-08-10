@@ -1,0 +1,72 @@
+<!--    Daniel Namir
+        This is the html page that runs the client side of this app
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="/code.js"></script>
+        <title>Ostaa</title>
+    </head>
+    <body>
+        <form>
+            <h1>Add User</h1>
+            <div>
+              <label for="username">Username: </label>
+              <input type="text" id="username">
+              <br></br>
+            </div>
+            <div>
+              <label for="password">Password: </label>
+              <input type="password" id="password">
+              <br></br>
+            </div>
+            <div>
+              <input id="userButton" type="button" onclick="addUser();" value="Add User">
+              <br></br>
+            </div>
+          </form>
+          <form>
+            <br></br>
+            <h1>Add Item</h1>
+            <div>
+              <label for="title">Title: </label>
+              <input type="text" id="title">
+              <br></br>
+            </div>
+            <div>
+              <label for="description">Desc: </label>
+              <input type="text" id="description">
+              <br></br>
+            </div>
+            <div>
+              <label for="image">Image: </label>
+              <input type="text" id="image">
+              <br></br>
+            </div>
+            <div>
+              <label for="price">Price: </label>
+              <input type="number" id="price">
+              <br></br>
+            </div>
+            <div>
+              <label for="status">Status: </label>
+              <input type="avail" id="status">
+              <br></br>
+            </div>
+            <div>
+              <label for="seller">Username: </label>
+              <input type="text" id="seller">
+              <br></br>
+            </div>
+            <div>
+              <input id="itemButton" type="button" onclick="addItem();" value="Add Item">
+            </div>
+          </form>
+          <br></br>
+          <div>
+              <input id="clearButton" type="button" onclick="clearDB();" value="Clear Database">
+          </div>
+    </body>
+</html>
